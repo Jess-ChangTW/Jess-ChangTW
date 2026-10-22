@@ -2,7 +2,7 @@
 
 MS in Business Analytics candidate at UCLA Anderson (December 2026), based in Los Angeles. Previously a data analyst at LINE Taiwan and a data and GTM operations intern at Bobyard. BA in Philosophy, National Taiwan University.
 
-[LinkedIn](LINKEDIN_URL) · ffrankychang@gmail.com
+[LinkedIn](https://www.linkedin.com/in/chen-che-chang) · ffrankychang@gmail.com
 
 ---
 
@@ -29,7 +29,7 @@ Studios release horror films before Halloween and romance films before Valentine
 
 ### NYC housing signals pipeline
 
-UCLA MSBA team project · Pipeline lead · [Repository](REPO_URL)
+UCLA MSBA team project · Pipeline lead · [Repository](https://github.com/Jess-ChangTW/nyc-housing-signals-pipeline)
 
 Tested whether NYC 311 nuisance complaints act as a leading indicator of home value growth at the ZIP-code level, 2020-2024, ahead of slower Census updates. I built the data pipeline, from raw data cleaning in PySpark to the gold table used for analysis.
 
