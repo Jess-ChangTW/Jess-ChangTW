@@ -2,7 +2,7 @@
 
 MS in Business Analytics candidate at UCLA Anderson (December 2026), based in Los Angeles. Previously a data analyst at LINE Taiwan and a data and GTM operations intern at Bobyard. BA in Philosophy, National Taiwan University.
 
-[LinkedIn](www.linkedin.com/in/chen-che-chang) · ffrankychang@gmail.com
+[LinkedIn](LINKEDIN_URL) · ffrankychang@gmail.com
 
 ---
 
@@ -29,9 +29,25 @@ Studios release horror films before Halloween and romance films before Valentine
 
 ### NYC housing signals pipeline
 
-UCLA MSBA team project · Pipeline lead · [Repository](https://github.com/Jess-ChangTW/nyc-housing-signals-pipeline)
+UCLA MSBA team project · Pipeline lead · [Repository](REPO_URL)
 
 Tested whether NYC 311 nuisance complaints act as a leading indicator of home value growth at the ZIP-code level, 2020-2024, ahead of slower Census updates. I built the data pipeline, from raw data cleaning in PySpark to the gold table used for analysis.
+
+```mermaid
+flowchart LR
+    A["NYC 311 Open Data"] --> R[("GCS raw")]
+    B["Zillow ZHVI"] --> R
+    C["Census ACS 5-year"] --> R
+    R --> S["PySpark on Dataproc<br/>clean, reshape, incremental loads"]
+    S --> P[("GCS clean Parquet")]
+    P --> ST["Snowflake STAGING"]
+    ST --> PR["Snowflake PRODUCTION<br/>dimensions and facts"]
+    PR --> G["Gold table<br/>ZIP x year signals"]
+    G --> T["Tableau"]
+    classDef mine fill:#fbe9e9,stroke:#c8323a,color:#1c1b1a
+    class S,P,ST,PR,G mine
+```
+*Highlighted: the parts I built.*
 
 **What I built**
 - PySpark jobs on Google Cloud Dataproc that clean and standardize three sources: NYC 311 Open Data (incremental daily loads, filtered to the needed fields), Zillow Home Value Index (reshaped from a wide monthly time series to long format) and US Census ACS 5-year estimates (income, education, population).
