@@ -1,6 +1,6 @@
 ## Chen-Che (Jess) Chang
 
-MS in Business Analytics candidate at UCLA Anderson (December 2026). GTM Operations Data Engineer Intern at Bobyard. BA in Philosophy, National Taiwan University
+MS in Business Analytics candidate at UCLA Anderson (December 2026). GTM Operations Data Engineer Intern at Bobyard. Performance Data Analyst Intern at LINE Taiwan. BA in Philosophy, National Taiwan University
 
 [LinkedIn](https://www.linkedin.com/in/chen-che-chang) · jjesschang@gmail.com
 
