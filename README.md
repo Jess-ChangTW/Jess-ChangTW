@@ -61,11 +61,25 @@ flowchart LR
 
 ---
 
+### Bobyard GTM data platform
+
+Data & GTM Operations Intern, Bobyard (construction tech, 2026) · Private codebase
+
+Bobyard's GTM data platform syncs HubSpot and sales tools into a PostgreSQL warehouse with bronze, silver and gold layers. I built and shipped pipelines on it, deploying directly to production on Heroku.
+
+- **YouTube analytics pipeline.** Ingests channel, video, traffic, geography and comment data from the YouTube Data and Analytics APIs into six bronze tables with cleaned silver views. Daily, backfill and comments modes; OAuth with channel verification so a wrong account fails loudly instead of writing zeros; a quota guard with a shared daily budget and Slack alerts.
+- **CRM deduplication pipeline.** SQL rule files detect duplicate companies and contacts, an executor builds a dry-run merge plan, and an operator-approved live run calls the HubSpot merge API with a full audit trail, since merges cannot be undone. Each rule pairs fuzzy name matching with an independent signal (domain, phone, shared contact) and guards for shared hosting platforms and switchboard numbers. Measured 96-100% precision on hand-labelled samples.
+- **Partnership attribution model.** Gold-layer SQL that credits demos to partner sources using a 60-day attribution window and first-touch rules.
+- **Data collection.** Python scrapers for public contractor license databases in several US states and UK procurement data (23,000+ company records).
+- **ICP tier validation.** Significance testing on demo and win rates to confirm the customer-fit tiers separate outcomes as intended.
+
+**Tools.** PostgreSQL (Supabase), SQL, Node.js, Python, HubSpot and YouTube APIs, Heroku
+
+---
+
 ### Other work
 
 **Multi-level genre classification** · UCLA MSBA capstone with Sony Pictures Television (in progress). Visualization and documentation lead.
-
-**Bobyard**, Data & GTM Operations Intern (2026). Built Python scrapers for public contractor license databases in several US states and UK procurement data; cleaned and deduplicated the results and supported customer-profile analysis in SQL.
 
 **LINE Taiwan**, Data Analyst. Community content and short video analytics.
 
