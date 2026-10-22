@@ -1,12 +1,12 @@
 ## Chen-Che (Jess) Chang
 
-MS in Business Analytics candidate at UCLA Anderson (December 2026), based in Los Angeles. Previously a data analyst at LINE Taiwan and a data and GTM operations intern at Bobyard. BA in Philosophy, National Taiwan University.
+MS in Business Analytics candidate at UCLA Anderson (December 2026). GTM Operations Data Engineer Intern at Bobyard. BA in Philosophy, National Taiwan University
 
-[LinkedIn](https://www.linkedin.com/in/chen-che-chang) · ffrankychang@gmail.com
+[LinkedIn](https://www.linkedin.com/in/chen-che-chang) · jjesschang@gmail.com
 
 ---
 
-### Holiday release effects on US box office
+### Project: Holiday release effects on US box office
 
 [Repository](https://github.com/Jess-ChangTW/movie-holiday-boxoffice) · [Project page](https://jess-changtw.github.io/movie-holiday-boxoffice/) · [Tableau story](https://public.tableau.com/app/profile/chen.che.chang1002/viz/holiday_box_office/Story1)
 
@@ -27,7 +27,7 @@ Studios release horror films before Halloween and romance films before Valentine
 
 ---
 
-### NYC housing signals pipeline
+### Project: NYC housing signals pipeline
 
 UCLA MSBA team project · Pipeline lead · [Repository](https://github.com/Jess-ChangTW/nyc-housing-signals-pipeline)
 
